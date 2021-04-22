@@ -1,6 +1,5 @@
 # PHP-FPM for Typecho
-This project reference to [ohmydockerhub/typecho-php](https://hub.docker.com/r/ohmydockerhub/typecho-php) on Docker Hub.  
-I have added 'healthcheck' on this basis.
+This project is used for building docker images for run [Typecho](https://github.com/typecho/typecho) in a docker container.
 
 ### Example of healthcheck configuration in docker compose
 ```script
