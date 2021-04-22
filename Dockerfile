@@ -12,9 +12,9 @@ RUN set -eux; \
         libzip-dev \
     ; \
     # install core extensions
-    docker-php-ext-configure gd --with-freetype --with-jpeg --with-png; \
+    docker-php-ext-configure gd --with-freetype --with-jpeg; \
     docker-php-ext-configure pdo_mysql --with-pdo-mysql=mysqlnd; \
-    docker-php-ext-configure zip; \
+    docker-php-ext-configure zip --with-libzip; \
     docker-php-ext-install -j$(nproc) gd pdo_mysql zip; \
     apk del .build-deps; \
     apk add --update \
